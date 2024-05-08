@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -45,7 +44,7 @@ public class User {
     private boolean phoneVerified = false;
 
     // SELF, GOOGLE, FACEBOOK, TWITTER, LINKEDIN, GITHUB
-    private Providers provider = Providers.SELF;
+    private Providers provider = in.somanath.entities.Providers.SELF;
     private String providerUserId;
 
     // add more fields if needed
